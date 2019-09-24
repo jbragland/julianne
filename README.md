@@ -1,6 +1,6 @@
 # Gatsby/WordPress Starter
 
-Based on the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) and [How to Build a Blog with WordPress and Gatsby.js](https://www.gatsbyjs.org/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/).
+Based on [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default) and [How to Build a Blog with WordPress and Gatsby.js](https://www.gatsbyjs.org/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1/).
 
 ## todo
 
