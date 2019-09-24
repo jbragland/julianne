@@ -11,8 +11,9 @@ const path = require(`path`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
-  const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
-  const PageTemplate = path.resolve("./src/templates/Page.js")
+  const BlogPostTemplate = path.resolve("./src/templates/singlePost.js")
+  const PageTemplate = path.resolve("./src/templates/singlePage.js")
+  const StaffTemplate = path.resolve("./src/templates/singleStaff.js")
 
   const result = await graphql(`
     {
@@ -25,6 +26,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
       allWordpressPage {
+        edges {
+          node {
+            slug
+            wordpress_id
+          }
+        }
+      }
+      allWordpressWpStaff {
         edges {
           node {
             slug
@@ -55,6 +64,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: `/${page.node.slug}`,
         component: PageTemplate,
+        context: {
+          id: page.node.wordpress_id,
+        },
+      })
+    })
+
+    const Staff = result.data.allWordpressWpStaff.edges
+    Staff.forEach(page => {
+      createPage({
+        path: `/staff/${page.node.slug}`,
+        component: StaffTemplate,
         context: {
           id: page.node.wordpress_id,
         },

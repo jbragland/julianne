@@ -35,7 +35,7 @@ module.exports = {
         baseUrl: "julianne.stpaulmedia.net",
         protocol: "https",
         hostingWPCOM: false,
-        useACF: false,
+        useACF: true,
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
@@ -54,6 +54,7 @@ module.exports = {
           "**/users",
           "**/*/*/menus",
           "**/*/*/menu-locations",
+          "**/staff",
         ],
         excludedRoutes: [],
         normalizer: function({ entities }) {
