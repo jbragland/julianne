@@ -8,7 +8,7 @@ Based on the [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-start
 - [x] Create page template
 - [x] Create index page
 - [ ] Update SEO component to use site metadata from WordPress
-- [ ] Add menus from WordPress
+- [x] Add menus from WordPress
 - [ ] Add categories from WordPress
 - [ ] Incorporate basic ACF fields
 - [ ] Incorporate ACF flexible content fields
