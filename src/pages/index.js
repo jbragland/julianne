@@ -1,4 +1,3 @@
-// src/pages/index.js
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
@@ -9,7 +8,8 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <ul style={{ listStyle: "none" }}>
+    <h1>Blog</h1>
+    <ul style={{ listStyle: "none", margin: 0 }}>
       {data.allWordpressPost.edges.map(post => (
         <li
           key={post.node.id}
