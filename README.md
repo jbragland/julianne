@@ -10,5 +10,6 @@ Based on [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-d
 - [ ] Update SEO component to use site metadata from WordPress
 - [x] Add menus from WordPress
 - [ ] Add categories from WordPress
-- [ ] Incorporate basic ACF fields
+- [x] Add CPT from WordPress
+- [x] Incorporate basic ACF fields
 - [ ] Incorporate ACF flexible content fields
